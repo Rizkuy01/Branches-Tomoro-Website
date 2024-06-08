@@ -74,10 +74,10 @@
                         </div>
                         <div class="col-md-6">
                            <div class="banner_taital_main">
-                              <h1 class="banner_taital">join our business for trendy business opportunities</h1>
+                              <h1 class="banner_taital">Join our business for trendy business opportunities</h1>
                               <form>
                                  <input type="text" class="search_text" placeholder="Ask your question here" name="Search text here">
-                                 <div class="search_bt"><a href="#">Join Now</a></div>
+                                 <div class="search_bt"><a href="auth/login.php">Join Now</a></div>
                               </form>
                            </div>
                         </div>
@@ -215,13 +215,19 @@
             <div class="contact_section_2">
                <div class="row">
                   <div class="col-md-12 padding15">
-                     <form action="">
+                     <form action="https://getform.io/f/zbzkdvna" method="POST" id="contactForm">
                         <div class="mail_section_1 ">
-                           <input type="text" class="mail_text" placeholder="Name" name="Name">
-                           <input type="text" class="mail_text" placeholder="Phone Number" name="Phone Number"> 
-                           <input type="text" class="mail_text" placeholder="Email" name="Email">
+                           <input type="text" class="mail_text" placeholder="Name" name="name">
+                           <input type="text" class="mail_text" placeholder="Phone Number" name="phone"> 
+                           <input type="text" class="mail_text" placeholder="Email" name="email">
                            <textarea class="massage-bt" placeholder="Massage" rows="5" id="comment" name="Massage"></textarea>
-                           <div class="send_bt"><a href="#">SEND</a></div>
+                           <button
+                           type="submit"
+                           id="submitButton"
+                           class="send-bt"
+                           >
+                           Submit
+                           </button>
                         </div>
                      </form>
                   </div>

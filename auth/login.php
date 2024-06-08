@@ -14,18 +14,18 @@
       <meta name="description" content="">
       <meta name="author" content="">
       <!-- bootstrap css -->
-      <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+      <link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css">
       <!-- style css -->
-      <link rel="stylesheet" type="text/css" href="css/style.css">
+      <link rel="stylesheet" type="text/css" href="../css/style.css">
       <!-- Responsive-->
-      <link rel="stylesheet" href="css/responsive.css">
+      <link rel="stylesheet" href="../css/responsive.css">
       <!-- fevicon -->
-      <link rel="icon" href="images/fevicon.png" type="image/gif" />
-      <link href="images/head.jpg" rel="icon" type="image/jpg" />
+      <link rel="icon" href="../images/fevicon.png" type="image/gif" />
+      <link href="../images/head.jpg" rel="icon" type="image/jpg" />
       <!-- font css -->
       <link href="https://fonts.googleapis.com/css?family=Baloo+Chettan+2:400,600,700|Poppins:400,600,700&display=swap" rel="stylesheet">
       <!-- Scrollbar Custom CSS -->
-      <link rel="stylesheet" href="css/jquery.mCustomScrollbar.min.css">
+      <link rel="stylesheet" href="../css/jquery.mCustomScrollbar.min.css">
       <!-- Tweaks for older IEs-->
       <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css">
       <style>
@@ -55,7 +55,7 @@
         <div class="card login-card">
             <div class="row g-0">
                 <div class="col-md-6 card-left d-flex justify-content-center align-items-center">
-                    <img src="images/login.jpg" alt="Logo" class="card-logo">
+                    <img src="../images/login.jpg" alt="Logo" class="card-logo">
                 </div>
                 <div class="col-md-6">
                     <div class="card-body mt-4">
@@ -75,23 +75,18 @@
                     </div>
                 </div>
             </div>
-            <div class="copyright_section">
-                <div class="container">
-                    <p class="copyright_text">2020 All Rights Reserved. Design by <a href="https://html.design">Free Html Templates</a> Distribution by <a href="https://themewagon.com">ThemeWagon</a></p>
-                </div>
-            </div>
         </div>
     </div>
 
 
     <!-- Javascript files-->
-    <script src="js/jquery.min.js"></script>
-    <script src="js/popper.min.js"></script>
-    <script src="js/bootstrap.bundle.min.js"></script>
-    <script src="js/jquery-3.0.0.min.js"></script>
-    <script src="js/plugin.js"></script>
+    <script src="../js/jquery.min.js"></script>
+    <script src="../js/popper.min.js"></script>
+    <script src="../js/bootstrap.bundle.min.js"></script>
+    <script src="../js/jquery-3.0.0.min.js"></script>
+    <script src="../js/plugin.js"></script>
     <!-- sidebar -->
-    <script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
-    <script src="js/custom.js"></script>
+    <script src="../js/jquery.mCustomScrollbar.concat.min.js"></script>
+    <script src="../js/custom.js"></script>
 </body>
 </html>

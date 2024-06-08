@@ -77,8 +77,7 @@
                            <input type="text" class="mail_text" placeholder="Email" name="email">
                            <input type="text" class="mail_text" placeholder="City" name="city"> 
                            <input type="text" class="mail_text" placeholder="Branch Type" name="type"> 
-                           <textarea class="massage-bt" placeholder="Massage" rows="5" id="comment" name="massage"></textarea>
-                           <div class="send_bt"><a href="#" type="submit">SEND</a></div>
+                           <button type="submit" class="btn btn-primary openBranchForm" id="openBranchForm">Submit</button>
                         </div>
                      </form>
                   </div>
@@ -95,7 +94,7 @@
       <!-- copyright section start -->
       <div class="copyright_section">
          <div class="container">
-            <p class="copyright_text">2020 All Rights Reserved. Design by <a href="https://html.design">Free Html Templates</a> Distribution by <a href="https://themewagon.com">ThemeWagon</a></p>
+            <p class="copyright_text">2024 Website Final Exam. &copy;<a href="https://github.com/Rizkuy01">Rizkuy01</a></p>
          </div>
       </div>
       <!-- copyright section end -->

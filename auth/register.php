@@ -1,49 +1,96 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login Page</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
-    <link href="../style.css" rel="stylesheet">
+      <!-- basic -->
+      <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <!-- mobile metas -->
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <meta name="viewport" content="initial-scale=1, maximum-scale=1">
+      <!-- site metas -->
+      <title>Registration | Branches</title>
+      <meta name="keywords" content="">
+      <meta name="description" content="">
+      <meta name="author" content="">
+      <!-- bootstrap css -->
+      <link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css">
+      <!-- style css -->
+      <link rel="stylesheet" type="text/css" href="../css/style.css">
+      <!-- Responsive-->
+      <link rel="stylesheet" href="../css/responsive.css">
+      <!-- fevicon -->
+      <link rel="icon" href="../images/fevicon.png" type="image/gif" />
+      <link href="../images/head.jpg" rel="icon" type="image/jpg" />
+      <!-- font css -->
+      <link href="https://fonts.googleapis.com/css?family=Baloo+Chettan+2:400,600,700|Poppins:400,600,700&display=swap" rel="stylesheet">
+      <!-- Scrollbar Custom CSS -->
+      <link rel="stylesheet" href="../css/jquery.mCustomScrollbar.min.css">
+      <!-- Tweaks for older IEs-->
+      <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css">
+      <style>
+        html, body {
+            height: 100%;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #F17945;
+        }
+        .login-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+        }
+        .register-card {
+            max-width: 600px;
+            width: 100%;
+        }
+      </style>
 </head>
 <body>
-<?php session_start(); ?>
+
     <div class="container register-container">
         <div class="card register-card">
             <div class="row g-0">
                 <div class="col-md-6 card-left d-flex justify-content-center align-items-center">
-                    <img src="../img/login.jpg" alt="Logo" class="card-logo">
+                    <img src="../images/login.jpg" alt="Logo" class="card-logo">
                 </div>
                 <div class="col-md-6">
                     <div class="card-body mt-4">
-                        <h5 class="card-title text-center fw-bold mt-4">REGISTER</h5>
-                        <form action="registration-proccess.php" method="POST">
+                        <h5 class="card-title text-center fw-bold mt-4">Registration</h5>
+                        <form action="registration-process.php" method="POST">
                             <div class="mb-3">
-                                <label for="email" class="form-label">Email</label>
-                                <input type="email" class="form-control" id="email" name="email" placeholder="Enter Valid Email">
-                            </div>
-                            <div class="mb-3">
-                                <label for="username" class="form-label">Username</label>
-                                <input type="text" class="form-control" id="username" name="username" placeholder="Enter Your Username">
+                                <label for="email" class="form-label">Email/Username</label>
+                                <input type="email" class="form-control" name="email" id="email" placeholder="Enter email or username" required>
                             </div>
                             <div class="mb-3">
                                 <label for="password" class="form-label">Password</label>
-                                <input type="password" class="form-control" id="password" name="password" placeholder="Password">
+                                <input type="password" class="form-control" name="password" id="password" placeholder="Password" required>
                             </div>
                             <div class="mb-3">
-                                <label for="confirm_password" class="form-label">Password</label>
-                                <input type="password" class="form-control" id="confirm_password" placeholder="Confirm Your Password">
+                                <label for="confirm-password" class="form-label">Confirm Password</label>
+                                <input type="password" class="form-control" name="confirm-password" id="confirm-password" placeholder="Confirm Your Password" required>
                             </div>
-                            <button type="submit" class="btn btn-primary w-100 mt-3" name="register">Create Account</button>
+                            <button type="submit" class="btn btn-primary w-100 mt-3">Create Account</button>
                         </form>
+                        <a href="login.php" class="text-sm">Already have an account? Login.</a>
                     </div>
                 </div>
             </div>
         </div>
     </div>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Javascript files-->
+    <script src="../js/jquery.min.js"></script>
+    <script src="../js/popper.min.js"></script>
+    <script src="../js/bootstrap.bundle.min.js"></script>
+    <script src="../js/jquery-3.0.0.min.js"></script>
+    <script src="../js/plugin.js"></script>
+    <!-- sidebar -->
+    <script src="../js/jquery.mCustomScrollbar.concat.min.js"></script>
+    <script src="../js/custom.js"></script>
 </body>
 </html>
