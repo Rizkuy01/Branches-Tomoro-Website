@@ -50,7 +50,7 @@
                         <a class="nav-link" href="testimonial.php">Testimonial</a>
                      </li>
                      <li class="nav-item">
-                        <a class="nav-link" href="contact.php">JOIN NOW</a>
+                        <a class="nav-link" href="auth/login.php">JOIN NOW</a>
                      </li>
                   </ul>
                   <form class="form-inline my-2 my-lg-0">
@@ -107,7 +107,7 @@
                                  <figure><img src="images/img-1.png"></figure>
                               </div>
                               <h3 class="materials_text">Support & Training</h3>
-                              <p class="categroy_text">By joining and opening a Tomoro branch, you will receive continuous support and training from an experienced team of experts, ensuring your business runs smoothly and successfully.</p>
+                              <p class="categroy_text">By joining and opening a Tomoro branch, you will receive continuous support and training from an experienced team from the experts in Tomoro.</p>
                               <div class="readmore_btn"><a href="#">Read More</a></div>
                            </div>
                            <div class="col-md-4">
@@ -157,12 +157,14 @@
          </div>
       </div>
       <!-- market section end -->
+
       <!-- client section start -->
       <div class="client_section layout_padding">
          <div class="container">
             <div class="row">
                <div class="col-md-12">
                   <h1 class="client_taital">Our clients Review</h1>
+                  <p class="client_text">Content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as</p>
                </div>
             </div>
          </div>
@@ -173,14 +175,14 @@
                <div class="carousel-inner">
                   <div class="carousel-item active">
                      <div class="row">
-                        <div class="col-md-12">
+                     <div class="col-md-12">
                            <div class="customer_main">
                               <div class="customer_left">
                                  <div class="customer_img"><img src="images/client-img.png"></div>
                               </div>
                               <div class="customer_right">
                                  <h3 class="customer_name ml-4">O. Komarudin</h3>
-                                 <p class="enim_text ml-4">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, asIt is a long established fact that a reader will be distracted </p>
+                                 <p class="enim_text ml-4">"Investing with Tomoro was one of the best decisions for my business portfolio. The quality of the coffee and the brand's commitment to excellence make it a promising venture for expansion."</p>
                               </div>
                            </div>
                            <div class="customer_main_1">
@@ -189,23 +191,18 @@
                               </div>
                               <div class="customer_right_1">
                                  <h3 class="customer_name">A. A. Ridha</h3>
-                                 <p class="enim_text">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of lette </p>
+                                 <p class="enim_text">"Opening a branch of this coffee shop has proven to be a lucrative business move. The brand's strong reputation and excellent customer service are key factors in our ongoing success."</p>
                               </div>
                            </div>
                         </div>
                      </div>
                   </div>
                </div>
-               <a class="carousel-control-prev" href="#my_slider" role="button" data-slide="prev">
-               <i class="fa fa-arrow-left"></i>
-               </a>
-               <a class="carousel-control-next" href="#my_slider" role="button" data-slide="next">
-               <i class="fa fa-arrow-right"></i>
-               </a>
             </div>
          </div>
       </div>
       <!-- client section end -->
+
       <!-- contact section start -->
       <div class="contact_section layout_padding">
          <div class="container">

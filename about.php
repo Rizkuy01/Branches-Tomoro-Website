@@ -49,13 +49,13 @@
                         <a class="nav-link" href="testimonial.php">Testimonial</a>
                      </li>
                      <li class="nav-item">
-                        <a class="nav-link" href="contact.php">JOIN NOW</a>
+                        <a class="nav-link" href="auth/login.php">JOIN NOW</a>
                      </li>
                   </ul>
                   <form class="form-inline my-2 my-lg-0">
                   </form>
                </div>
-            </nav>
+         </nav>
          </div>
       </div>
       <!-- header section end -->

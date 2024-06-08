@@ -32,7 +32,7 @@
    <body>
       <div class="header_section">
          <div class="container">
-            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+         <nav class="navbar navbar-expand-lg navbar-light bg-light">
                <a class="navbar-brand"href="index.php"><img src="images/logo.png"></a>
                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                <span class="navbar-toggler-icon"></span>
@@ -49,7 +49,7 @@
                         <a class="nav-link" href="testimonial.php">Testimonial</a>
                      </li>
                      <li class="nav-item">
-                        <a class="nav-link" href="contact.php">JOIN NOW</a>
+                        <a class="nav-link" href="auth/login.php">JOIN NOW</a>
                      </li>
                   </ul>
                   <form class="form-inline my-2 my-lg-0">
@@ -83,7 +83,7 @@
                               </div>
                               <div class="customer_right">
                                  <h3 class="customer_name ml-4">O. Komarudin</h3>
-                                 <p class="enim_text ml-4">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, asIt is a long established fact that a reader will be distracted </p>
+                                 <p class="enim_text ml-4">"Investing with Tomoro was one of the best decisions for my business portfolio. The quality of the coffee and the brand's commitment to excellence make it a promising venture for expansion."</p>
                               </div>
                            </div>
                            <div class="customer_main_1">
@@ -92,7 +92,7 @@
                               </div>
                               <div class="customer_right_1">
                                  <h3 class="customer_name">A. A. Ridha</h3>
-                                 <p class="enim_text">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of lette </p>
+                                 <p class="enim_text">"Opening a branch of this coffee shop has proven to be a lucrative business move. The brand's strong reputation and excellent customer service are key factors in our ongoing success."</p>
                               </div>
                            </div>
                         </div>

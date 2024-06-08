@@ -49,7 +49,7 @@
                         <a class="nav-link" href="testimonial.php">Testimonial</a>
                      </li>
                      <li class="nav-item">
-                        <a class="nav-link" href="contact.php">JOIN NOW</a>
+                        <a class="nav-link" href="auth/login.php">JOIN NOW</a>
                      </li>
                   </ul>
                   <form class="form-inline my-2 my-lg-0">
@@ -71,13 +71,14 @@
             <div class="contact_section_2">
                <div class="row">
                   <div class="col-md-12 padding15">
-                     <form action="">
+                     <form action="add-branch.php" method="POST">
                         <div class="mail_section_1 ">
-                           <input type="text" class="mail_text" placeholder="Name" name="Name">
-                           <input type="text" class="mail_text" placeholder="Phone Number" name="Phone Number"> 
-                           <input type="text" class="mail_text" placeholder="Email" name="Email">
-                           <textarea class="massage-bt" placeholder="Massage" rows="5" id="comment" name="Massage"></textarea>
-                           <div class="send_bt"><a href="#">SEND</a></div>
+                           <input type="text" class="mail_text" placeholder="Your Name" name="name">
+                           <input type="text" class="mail_text" placeholder="Email" name="email">
+                           <input type="text" class="mail_text" placeholder="City" name="city"> 
+                           <input type="text" class="mail_text" placeholder="Branch Type" name="type"> 
+                           <textarea class="massage-bt" placeholder="Massage" rows="5" id="comment" name="massage"></textarea>
+                           <div class="send_bt"><a href="#" type="submit">SEND</a></div>
                         </div>
                      </form>
                   </div>
@@ -86,47 +87,11 @@
          </div>
          <div class="map_main">
             <div class="map-responsive">
-               <iframe src="https://www.google.com/maps/embed/v1/place?key=AIzaSyA0s1a7phLN0iaD6-UE7m4qP-z21pH0eSc&amp;q=Eiffel+Tower+Paris+France" width="600" height="300" frameborder="0" style="border:0; width: 100%;" allowfullscreen=""></iframe>
+               <iframe src="https://www.google.com/maps/embed/v1/place?key=AIzaSyA0s1a7phLN0iaD6-UE7m4qP-z21pH0eSc&q=Universitas+Singaperbangsa+Karawang" width="600" height="300" frameborder="0" style="border:0; width: 100%;" allowfullscreen=""></iframe>
             </div>
          </div>
       </div>
       <!-- contact section end -->
-      <!-- footer section start -->
-      <div class="footer_section layout_padding">
-         <div class="container">
-            <div class="row">
-               <div class="col-md-8">
-                  <div class="location_text">
-                     <ul>
-                        <li>
-                           <a href="#"><span class="padding_left_10"><i class="fa fa-map-marker" aria-hidden="true"></i></span>It is a long established fact that a <br>reader will be </a>
-                        </li>
-                        <li>
-                           <a href="#"><span class="padding_left_10"><i class="fa fa-phone" aria-hidden="true"></i></span>(+71) 1234567890</a>
-                        </li>
-                        <li>
-                           <a href="#"><span class="padding_left_10"><i class="fa fa-envelope" aria-hidden="true"></i></span>demo@gmail.com</a>
-                        </li>
-                     </ul>
-                  </div>
-               </div>
-               <div class="col-md-4">
-                  <div class="newslatter_main">
-                     <h1 class="useful_text">Follow Us</h1>
-                     <div class="footer_social_icon">
-                        <ul>
-                           <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
-                           <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
-                           <li><a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
-                           <li><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
-                        </ul>
-                     </div>
-                  </div>
-               </div>
-            </div>
-         </div>
-      </div>
-      <!-- footer section end -->
       <!-- copyright section start -->
       <div class="copyright_section">
          <div class="container">

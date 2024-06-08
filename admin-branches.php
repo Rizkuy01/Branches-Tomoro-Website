@@ -17,6 +17,8 @@
       <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
       <!-- style css -->
       <link rel="stylesheet" type="text/css" href="css/style.css">
+      <!-- Data Tables -->
+      <link href="https://cdn.datatables.net/v/dt/dt-1.13.6/datatables.min.css" rel="stylesheet">
       <!-- Responsive-->
       <link rel="stylesheet" href="css/responsive.css">
       <!-- fevicon -->
@@ -32,30 +34,6 @@
    <body>
       <div class="header_section">
          <div class="container">
-         <nav class="navbar navbar-expand-lg navbar-light bg-light">
-               <a class="navbar-brand"href="index.php"><img src="images/logo.png"></a>
-               <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-               <span class="navbar-toggler-icon"></span>
-               </button>
-               <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                  <ul class="navbar-nav ml-auto">
-                     <li class="nav-item">
-                        <a class="nav-link" href="index.php">Home</a>
-                     </li>
-                     <li class="nav-item">
-                        <a class="nav-link" href="about.php">About Us</a>
-                     </li>
-                     <li class="nav-item">
-                        <a class="nav-link" href="testimonial.php">Testimonial</a>
-                     </li>
-                     <li class="nav-item">
-                        <a class="nav-link" href="contact.php">Contact Us</a>
-                     </li>
-                  </ul>
-                  <form class="form-inline my-2 my-lg-0">
-                  </form>
-               </div>
-            </nav>
          </div>
       </div>
       <!-- header section end -->
@@ -64,59 +42,55 @@
          <div class="container">
             <div class="row">
                <div class="col-md-12">
-                  <h1 class="market_taital">Market Research Reports</h1>
+                  <h1 class="client_taital">Market Research Reports</h1>
                </div>
             </div>
             <div class="market_section_2">
-               <h4 class="market_text active">01 <span class="padding10">words which don't look even slightly believable. If you are going </span></h4>
-               <p class="dummy_text">anything embarrassing hidden in the middle of text. All the Lorem Ipsum generator</p>
-               <h4 class="market_text">02 <span class="padding10">words which don't look even slightly believable. If you are going </span></h4>
-               <p class="dummy_text">anything embarrassing hidden in the middle of text. All the Lorem Ipsum g</p>
-               <h4 class="market_text">03 <span class="padding10">words which don't look even slightly believable. If you are going </span></h4>
-               <p class="dummy_text">anything embarrassing hidden in the middle of text. All the Lorem Ipsum generato</p>
-               <h4 class="market_text">04 <span class="padding10">words which don't look even slightly believable. If you are going </span></h4>
-               <p class="dummy_text">aanything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet t</p>
+            <table class="table" width="100%" id="table-branch">
+                <thead class="table-light">
+                    <tr>
+                        <th scope="col">ID</th>
+                        <th scope="col">Investor Name</th>
+                        <th scope="col">Email</th>
+                        <th scope="col">City</th>
+                        <th scope="col">Branch Type</th>
+                        <th scope="col">Action</th>
+                    </tr>
+                </thead>
+                <tbody>
+                <?php
+                require_once 'conn.php';
+                $sql = "SELECT id, name, city, type FROM branch";
+                $result = $conn->query($sql);
+                    if ($result->num_rows > 0) {
+                        while($row = $result->fetch_assoc()) {
+                            echo "<tr>";
+                            echo "<td>" . $row["id"] . "</td>";
+                            echo "<td>" . $row["name"] . "</td>";
+                            echo "<td>" . $row["email"] . "</td>";
+                            echo "<td>" . $row["city"] . "</td>";
+                            echo "<td>" . $row["type"] . "</td>";
+                            echo "<td>
+                                        <form action='delete-data.php' method='POST' onsubmit='return confirm(\"Are you sure you want to delete this transaction?\");'>
+                                            <input type='hidden' name='deleteDataId' value='" . $row["id"] . "' />
+                                            <button type='submit' class='btn btn-danger btn-sm'>Delete</button>
+                                        </form>
+                                    </td>";
+                                echo "</tr>";
+                            echo "</tr>";
+                        }
+                    } else {
+                        echo "<tr><td colspan='3'>Data not found</td></tr>";
+                    }
+                    $conn->close();
+                    ?>
+                </tbody>
+            </table>
             </div>
             <div class="seemore_bt"><a href="#">Read More</a></div>
          </div>
       </div>
       <!-- market section end -->
-      <!-- footer section start -->
-      <div class="footer_section layout_padding margin_top90">
-         <div class="container">
-            <div class="row">
-               <div class="col-md-8">
-                  <div class="location_text">
-                     <ul>
-                        <li>
-                           <a href="#"><span class="padding_left_10"><i class="fa fa-map-marker" aria-hidden="true"></i></span>It is a long established fact that a <br>reader will be </a>
-                        </li>
-                        <li>
-                           <a href="#"><span class="padding_left_10"><i class="fa fa-phone" aria-hidden="true"></i></span>(+71) 1234567890</a>
-                        </li>
-                        <li>
-                           <a href="#"><span class="padding_left_10"><i class="fa fa-envelope" aria-hidden="true"></i></span>demo@gmail.com</a>
-                        </li>
-                     </ul>
-                  </div>
-               </div>
-               <div class="col-md-4">
-                  <div class="newslatter_main">
-                     <h1 class="useful_text">Follow Us</h1>
-                     <div class="footer_social_icon">
-                        <ul>
-                           <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
-                           <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
-                           <li><a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
-                           <li><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
-                        </ul>
-                     </div>
-                  </div>
-               </div>
-            </div>
-         </div>
-      </div>
-      <!-- footer section end -->
       <!-- copyright section start -->
       <div class="copyright_section">
          <div class="container">
@@ -133,5 +107,12 @@
       <!-- sidebar -->
       <script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
       <script src="js/custom.js"></script>
+      <!-- data table -->
+      <script src="https://cdn.datatables.net/v/dt/dt-1.13.6/datatables.min.js"></script>
+      <script>
+        $(document).ready(function() {
+            $('#table-branch').DataTable();
+        });
+    </script>
    </body>
 </html>
