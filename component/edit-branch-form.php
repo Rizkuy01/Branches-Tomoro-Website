@@ -73,7 +73,7 @@
             <div class="contact_section_2">
                <div class="row">
                   <div class="col-md-12 padding15">
-                     <form action="edit-branch.php" method="POST">
+                     <form action="../admin/edit-branch.php" method="POST">
                         <div class="mail_section_1 ">
                             <input type="hidden" name="id" value="<?php echo $id; ?>">
                            <input type="text" class="mail_text" placeholder="Your Name" name="name" value="<?php echo $name; ?>">
