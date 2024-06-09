@@ -14,20 +14,20 @@
       <meta name="description" content="">
       <meta name="author" content="">
       <!-- bootstrap css -->
-      <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+      <link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css">
       <!-- style css -->
-      <link rel="stylesheet" type="text/css" href="css/style.css">
+      <link rel="stylesheet" type="text/css" href="../css/style.css">
       <!-- Data Tables -->
       <link href="https://cdn.datatables.net/v/dt/dt-1.13.6/datatables.min.css" rel="stylesheet">
       <!-- Responsive-->
-      <link rel="stylesheet" href="css/responsive.css">
+      <link rel="stylesheet" href="../css/responsive.css">
       <!-- fevicon -->
-      <link rel="icon" href="images/fevicon.png" type="image/gif" />
-      <link href="images/head.jpg" rel="icon" type="image/jpg" />
+      <link rel="icon" href="../images/fevicon.png" type="image/gif" />
+      <link href="../images/head.jpg" rel="icon" type="image/jpg" />
       <!-- font css -->
       <link href="https://fonts.googleapis.com/css?family=Baloo+Chettan+2:400,600,700|Poppins:400,600,700&display=swap" rel="stylesheet">
       <!-- Scrollbar Custom CSS -->
-      <link rel="stylesheet" href="css/jquery.mCustomScrollbar.min.css">
+      <link rel="stylesheet" href="../css/jquery.mCustomScrollbar.min.css">
       <!-- Tweaks for older IEs-->
       <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css">
    </head>
@@ -59,7 +59,7 @@
                 </thead>
                 <tbody>
                 <?php
-                require_once 'conn.php';
+                require_once '../database/conn.php';
                 $sql = "SELECT id, name, city, type FROM branch";
                 $result = $conn->query($sql);
                     if ($result->num_rows > 0) {
@@ -73,6 +73,7 @@
                             echo "<td>
                                         <form action='delete-data.php' method='POST' onsubmit='return confirm(\"Are you sure you want to delete this transaction?\");'>
                                             <input type='hidden' name='deleteDataId' value='" . $row["id"] . "' />
+                                            <a class='btn btn-warning btn-sm' href='edit-branch-form.php'>Edit</a>
                                             <button type='submit' class='btn btn-danger btn-sm'>Delete</button>
                                         </form>
                                     </td>";
@@ -99,14 +100,14 @@
       </div>
       <!-- copyright section end -->
       <!-- Javascript files-->
-      <script src="js/jquery.min.js"></script>
-      <script src="js/popper.min.js"></script>
-      <script src="js/bootstrap.bundle.min.js"></script>
-      <script src="js/jquery-3.0.0.min.js"></script>
-      <script src="js/plugin.js"></script>
+      <script src="../js/jquery.min.js"></script>
+      <script src="../js/popper.min.js"></script>
+      <script src="../js/bootstrap.bundle.min.js"></script>
+      <script src="../js/jquery-3.0.0.min.js"></script>
+      <script src="../js/plugin.js"></script>
       <!-- sidebar -->
-      <script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
-      <script src="js/custom.js"></script>
+      <script src="../js/jquery.mCustomScrollbar.concat.min.js"></script>
+      <script src="../js/custom.js"></script>
       <!-- data table -->
       <script src="https://cdn.datatables.net/v/dt/dt-1.13.6/datatables.min.js"></script>
       <script>

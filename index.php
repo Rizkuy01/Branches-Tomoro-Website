@@ -41,13 +41,13 @@
                <div class="collapse navbar-collapse" id="navbarSupportedContent">
                   <ul class="navbar-nav ml-auto">
                      <li class="nav-item">
-                        <a class="nav-link" href="index.php">Home</a>
+                        <a class="nav-link" href="component/index.php">Home</a>
                      </li>
                      <li class="nav-item">
-                        <a class="nav-link" href="about.php">About Us</a>
+                        <a class="nav-link" href="component/about.php">About Us</a>
                      </li>
                      <li class="nav-item">
-                        <a class="nav-link" href="testimonial.php">Testimonial</a>
+                        <a class="nav-link" href="component/testimonial.php">Testimonial</a>
                      </li>
                      <li class="nav-item">
                         <a class="nav-link" href="auth/login.php">JOIN NOW</a>
@@ -221,13 +221,7 @@
                            <input type="text" class="mail_text" placeholder="Phone Number" name="phone"> 
                            <input type="text" class="mail_text" placeholder="Email" name="email">
                            <textarea class="massage-bt" placeholder="Massage" rows="5" id="comment" name="Massage"></textarea>
-                           <button
-                           type="submit"
-                           id="submitButton"
-                           class="send-bt"
-                           >
-                           Submit
-                           </button>
+                           <div class="send_bt"><a href="#" type="submit" id="submitButton">Submit</a></div>
                         </div>
                      </form>
                   </div>

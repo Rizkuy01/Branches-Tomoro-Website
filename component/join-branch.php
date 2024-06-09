@@ -9,7 +9,7 @@
       <meta name="viewport" content="width=device-width, initial-scale=1">
       <meta name="viewport" content="initial-scale=1, maximum-scale=1">
       <!-- site metas -->
-      <title>Testimonial</title>
+      <title>Contact</title>
       <meta name="keywords" content="">
       <meta name="description" content="">
       <meta name="author" content="">
@@ -59,50 +59,38 @@
          </div>
       </div>
       <!-- header section end -->
-      <!-- client section start -->
-      <div class="client_section layout_padding">
+      <!-- contact section start -->
+      <div class="contact_section layout_padding">
          <div class="container">
             <div class="row">
                <div class="col-md-12">
-                  <h1 class="client_taital">Our clients Review</h1>
-                  <p class="client_text">Content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as</p>
+                  <h1 class="contact_taital">Contact Us</h1>
+                  <p class="contact_text"> content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as</p>
                </div>
             </div>
-         </div>
-      </div>
-      <div class="client_section_2">
-         <div class="container">
-            <div id="my_slider" class="carousel slide" data-ride="carousel">
-               <div class="carousel-inner">
-                  <div class="carousel-item active">
-                     <div class="row">
-                     <div class="col-md-12">
-                           <div class="customer_main">
-                              <div class="customer_left">
-                                 <div class="customer_img"><img src="images/client-img.png"></div>
-                              </div>
-                              <div class="customer_right">
-                                 <h3 class="customer_name ml-4">O. Komarudin</h3>
-                                 <p class="enim_text ml-4">"Investing with Tomoro was one of the best decisions for my business portfolio. The quality of the coffee and the brand's commitment to excellence make it a promising venture for expansion."</p>
-                              </div>
-                           </div>
-                           <div class="customer_main_1">
-                              <div class="customer_left_1">
-                                 <div class="client_img1"><img src="images/client-img1.png"></div>
-                              </div>
-                              <div class="customer_right_1">
-                                 <h3 class="customer_name">A. A. Ridha</h3>
-                                 <p class="enim_text">"Opening a branch of this coffee shop has proven to be a lucrative business move. The brand's strong reputation and excellent customer service are key factors in our ongoing success."</p>
-                              </div>
-                           </div>
+            <div class="contact_section_2">
+               <div class="row">
+                  <div class="col-md-12 padding15">
+                     <form action="add-branch.php" method="POST">
+                        <div class="mail_section_1 ">
+                           <input type="text" class="mail_text" placeholder="Your Name" name="name">
+                           <input type="text" class="mail_text" placeholder="Email" name="email">
+                           <input type="text" class="mail_text" placeholder="City" name="city"> 
+                           <input type="text" class="mail_text" placeholder="Branch Type" name="type"> 
+                           <div class="readmore_btn active"><a href="#" class="mt-4">Submit</a></div>
                         </div>
-                     </div>
+                     </form>
                   </div>
                </div>
             </div>
          </div>
+         <div class="map_main">
+            <div class="map-responsive">
+               <iframe src="https://www.google.com/maps/embed/v1/place?key=AIzaSyA0s1a7phLN0iaD6-UE7m4qP-z21pH0eSc&q=Universitas+Singaperbangsa+Karawang" width="600" height="300" frameborder="0" style="border:0; width: 100%;" allowfullscreen=""></iframe>
+            </div>
+         </div>
       </div>
-      <!-- client section end -->
+      <!-- contact section end -->
       <!-- copyright section start -->
       <div class="copyright_section">
          <div class="container">

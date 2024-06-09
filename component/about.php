@@ -9,23 +9,23 @@
       <meta name="viewport" content="width=device-width, initial-scale=1">
       <meta name="viewport" content="initial-scale=1, maximum-scale=1">
       <!-- site metas -->
-      <title>Contact</title>
+      <title>About</title>
       <meta name="keywords" content="">
       <meta name="description" content="">
       <meta name="author" content="">
       <!-- bootstrap css -->
-      <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+      <link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css">
       <!-- style css -->
-      <link rel="stylesheet" type="text/css" href="css/style.css">
+      <link rel="stylesheet" type="text/css" href="../css/style.css">
       <!-- Responsive-->
-      <link rel="stylesheet" href="css/responsive.css">
+      <link rel="stylesheet" href="../css/responsive.css">
       <!-- fevicon -->
-      <link rel="icon" href="images/fevicon.png" type="image/gif" />
-      <link href="images/head.jpg" rel="icon" type="image/jpg" />
+      <link rel="icon" href="../images/fevicon.png" type="image/gif" />
+      <link href="../images/head.jpg" rel="icon" type="image/jpg" />
       <!-- font css -->
       <link href="https://fonts.googleapis.com/css?family=Baloo+Chettan+2:400,600,700|Poppins:400,600,700&display=swap" rel="stylesheet">
       <!-- Scrollbar Custom CSS -->
-      <link rel="stylesheet" href="css/jquery.mCustomScrollbar.min.css">
+      <link rel="stylesheet" href="../css/jquery.mCustomScrollbar.min.css">
       <!-- Tweaks for older IEs-->
       <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css">
    </head>
@@ -55,42 +55,33 @@
                   <form class="form-inline my-2 my-lg-0">
                   </form>
                </div>
-            </nav>
+         </nav>
          </div>
       </div>
       <!-- header section end -->
-      <!-- contact section start -->
-      <div class="contact_section layout_padding">
+      <!-- market section start -->
+      <div class="market_section layout_padding">
          <div class="container">
             <div class="row">
                <div class="col-md-12">
-                  <h1 class="contact_taital">Contact Us</h1>
-                  <p class="contact_text"> content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as</p>
+                  <h1 class="market_taital">Market Research Reports</h1>
                </div>
             </div>
-            <div class="contact_section_2">
-               <div class="row">
-                  <div class="col-md-12 padding15">
-                     <form action="add-branch.php" method="POST">
-                        <div class="mail_section_1 ">
-                           <input type="text" class="mail_text" placeholder="Your Name" name="name">
-                           <input type="text" class="mail_text" placeholder="Email" name="email">
-                           <input type="text" class="mail_text" placeholder="City" name="city"> 
-                           <input type="text" class="mail_text" placeholder="Branch Type" name="type"> 
-                           <button type="submit" class="btn btn-primary openBranchForm" id="openBranchForm">Submit</button>
-                        </div>
-                     </form>
-                  </div>
-               </div>
+            <div class="market_section_2">
+               <h4 class="market_text">01 <span class="padding10">Understanding Customer Needs and Preferences. </span></h4>
+               <p class="dummy_text">Market research helps businesses understand what customers need and prefer, enabling them to tailor their products and services to meet those demands.</p>
+               <h4 class="market_text">02 <span class="padding10">Identifying Market Trends and Opportunities. </span></h4>
+               <p class="dummy_text">Market research enables businesses to identify current market trends and potential opportunities for growth and expansion.</p>
+               <h4 class="market_text">03 <span class="padding10">Analyzing Competitors.</span></h4>
+               <p class="dummy_text">Market research provides insights into competitors' strategies, strengths, and weaknesses, helping businesses develop effective competitive strategies.</p>
+               <h4 class="market_text">04 <span class="padding10">Assessing Market Viability and Risk. </span></h4>
+               <p class="dummy_text">Market research helps businesses assess the viability of entering a new market or launching a new product, as well as identify potential risks.</p>
             </div>
-         </div>
-         <div class="map_main">
-            <div class="map-responsive">
-               <iframe src="https://www.google.com/maps/embed/v1/place?key=AIzaSyA0s1a7phLN0iaD6-UE7m4qP-z21pH0eSc&q=Universitas+Singaperbangsa+Karawang" width="600" height="300" frameborder="0" style="border:0; width: 100%;" allowfullscreen=""></iframe>
-            </div>
+            <div class="seemore_bt"><a href="#">Read More</a></div>
          </div>
       </div>
-      <!-- contact section end -->
+      <!-- market section end -->
+
       <!-- copyright section start -->
       <div class="copyright_section">
          <div class="container">
@@ -98,14 +89,15 @@
          </div>
       </div>
       <!-- copyright section end -->
+
       <!-- Javascript files-->
-      <script src="js/jquery.min.js"></script>
-      <script src="js/popper.min.js"></script>
-      <script src="js/bootstrap.bundle.min.js"></script>
-      <script src="js/jquery-3.0.0.min.js"></script>
-      <script src="js/plugin.js"></script>
+      <script src="../js/jquery.min.js"></script>
+      <script src="../js/popper.min.js"></script>
+      <script src="../js/bootstrap.bundle.min.js"></script>
+      <script src="../js/jquery-3.0.0.min.js"></script>
+      <script src="../js/plugin.js"></script>
       <!-- sidebar -->
-      <script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
-      <script src="js/custom.js"></script>
+      <script src="../js/jquery.mCustomScrollbar.concat.min.js"></script>
+      <script src="../js/custom.js"></script>
    </body>
 </html>
